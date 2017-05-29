@@ -1,10 +1,10 @@
 import unittest
 
 
-class FooTests(unittest.TestCase):
+class FoodTests(unittest.TestCase):
 
-    def testFoo(self):
-        self.failUnless(False)
+    def testFood(self):
+        self.assertEquals('food'.upper(), 'FOOD')
 
 
 def main():

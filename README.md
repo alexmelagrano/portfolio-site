@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/alexmelagrano/portfolio-site.svg?branch=master)](https://travis-ci.org/alexmelagrano/portfolio-site)
+
 # Personal Website
 
 Version one of this website has been live for nearly a year and a half, and it's no longer a great representation of my capabilities, services, nor design style.  That means it's time for a v2.  Running on Flask and hosted on an EC2 instance, this is much cooler than the "one html/css file" setup it is replacing.  

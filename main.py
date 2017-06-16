@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from tweets import getLatestTweet
 
 app = Flask(__name__)
 
@@ -16,6 +17,12 @@ def photography():
            'work!</h1> </br> ' \
            '<h3 style="width: 100%; text-align: center">This page is a work in progress, so check back later.</h3>'
 
+
+@app.route('/get-tweet/')
+def getTweet():
+    postInfo = getLatestTweet()
+
+    return postInfo
 
 if __name__ == "__main__":
     app.debug = True

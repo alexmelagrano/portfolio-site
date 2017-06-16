@@ -1,385 +1,132 @@
-/* 
-Main CSS file; stylesheet contains data for the 
-layout and design of the background of the page.
-*/
+body {
+  background-color: #F9FFF3;
+  color: #1C344C;
+  font-family: "Avant Garde Gothic", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+  line-height: 1.3;
+  margin: 0; }
 
-/* Navigation Bar */
+footer, header, menu, nav, section {
+  display: block; }
 
-.navbar {
-    background-color: #4f4f4f;
-    color: #efefef;
-    font-family: Avantgarde, sans-serif;
-    font-size: 18px !important;
-    font-style: normal;
-    font-weight: 100;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    z-index: 100;
-    position: fixed;
-    margin-bottom: 0;
-    border: transparent;
-    width: 100%;
-}
+p {
+  margin-top: 0;
+  margin-bottom: 30px;
+  letter-spacing: 2px; }
 
-.navbar li a,
-.navbar .navbar-brand {
-    color: #efefef !important;
-}
+.outer-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 150px 0; }
 
-.navbar .navbar-brand {
-    margin-top: 4px;
-}
+.uppercase {
+  text-transform: uppercase; }
 
-.navbar-nav li a:hover,
-.navbar-nav li.active a {
-    color: #8fdfef !important;
-    font-weight: 200 !important;
-    background-color: #3f3f3f !important;
-}
+.bold {
+  font-weight: 700;
+  letter-spacing: 0.1rem; }
 
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #efefef !important;
-}
+.wide {
+  letter-spacing: 0.5rem; }
 
+.med-wide {
+  letter-spacing: 0.2rem; }
 
-/* Jumbotron/Home Page */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
 
-.jumbotron {
-    background-image: url('http://i.imgur.com/L1vUROX.jpg');
-    height: 705px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-transform: uppercase;
-    color: #efefef;
-    border: transparent;
-    margin-bottom: 0px !important;
-}
+h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  letter-spacing: -0.1re; }
 
-.jumbotron .container {
-    position: relative;
-    top: 150px;
-}
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.1rem; }
 
-.jumbotron h1 {
-    outline: none;
-    margin: 30px;
-    font-size: 70px;
-    text-align: center;
-}
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: -0.1rem; }
 
-.jumbotron p {
-    outline: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 26px;
-    text-align: center;
-}
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -0.08rem; }
 
-.jumbotron ul {
-    margin-top: 30px;
-    text-align: center;
-}
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -0.05rem; }
 
-.jumbotron li {
-    font-size: 16px;
-}
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; }
 
+/* Larger than phablet */
+h1 {
+  font-size: 5rem; }
 
-/* About Me */
+h2 {
+  font-size: 4.2rem; }
 
-.about-me {
-    background-color: #6f6f6f;
-    height: 705px;
-}
+h3 {
+  font-size: 3.6rem; }
 
-.about-me .container {
-    position: relative;
-    top: 100px;
-    bottom: 100px;
-    text-align: center;
-    font-style: normal;
-}
-.about-me img {
-    height: 200px;
-    margin-bottom: 30px;
-}
+h4 {
+  font-size: 3rem; }
 
-.about-me p {
-    font-family: Avantgarde, sans-serif;
-    font-size: 22px;
-    font-weight: 200;
-    color: #efefef;
-    margin-bottom: 60px;
-    margin-left: 120px;
-    margin-right: 120px;
-}
+h5 {
+  font-size: 2.4rem; }
 
+h6 {
+  font-size: 1.6rem; }
 
-/* Services */
+html {
+  box-sizing: border-box; }
 
-.services {
-    background-image: url('http://i.imgur.com/BLvY4RC.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #cfcfcf;
-    border: transparent;
-    height: 800px;
-}
-
-.services .container {
-    position: relative;
-    top: 100px;
-    bottom: 120px;
-    text-align: center;
-    font-style: normal;
-}
-
-/* see "MILO" CSS */
-
-/* Projects */
-
-.projects {
-    background-color: #cfcfcf;
-    border: transparent;
-    height: 800px;
-}
-
-.projects .container {
-    position: relative;
-    top: 80px;
-    bottom: 100px;
-    text-align: center;
-    font-style: normal;
-}
-
-.projects h5 {
-    float: left;
-    color: #6f6f6f;
-    font-family: Avantgarde, sans-serif;
-    font-size: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-top: 230px;
-    margin-bottom: -5px;
-}
-
-/* Photography */
-.photography {
-    background-image: url('http://i.imgur.com/QxCiv13.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #cfcfcf;
-    border: transparent;
-    height: 800px;
-}
-
-.photography .container {
-    position: relative;
-    top: 70px;
-    bottom: 90px;
-    text-align: center;
-    font-style: normal;    
-}
-
-.photography img {
-    margin: -20px;
-}
-
-
-/* Contact */
-.contact {
-    background-color: #6f6f6f;
-    border: transparent;
-    height: 705px;
-}
-
-.contact .container {
-    position: relative;
-    top: 110px;
-    bottom: 100px;
-    text-align: center;
-    font-style: normal;
-}
-.contact img {
-    height: 200px;
-}
-.contact h5 {
-    font-family: Avantgarde, sans-serif;
-    font-size: 22px;
-    font-weight: 100;
-    color: #8fdfef;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-
-
-/* Footer */
-.footer {
-    background-image: url('http://i.imgur.com/XE06GMb.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: transparent;
-    height: 300px;
-}
-
-.footer .container {
-    position: relative;
-    top: 60px;
-    bottom: 60px;
-    text-align: center;
-    font-style: normal;
-}
-
-.footer h6 {
-    font-family: Avantgarde, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #5f5f5f;
-    margin-bottom: 10px;
-}
-
-.footer p {
-    font-family: Avantgarde, sans-serif;
-    font-size: 13px;
-    font-weight: bold;
-    color: #5f5f5f;
-    text-transform: uppercase;
-    margin-top: 15px;
-}
-
-/* CSS for specific items */
+*, *::after, *::before {
+  box-sizing: inherit; }
 
 @font-face {
-	font-weight: normal;
-	font-style: normal;
-	font-family: 'feathericons';
-	src:url('../fonts/feathericons/feathericons.eot?-8is7zf');
-	src:url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
-		url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
-		url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
-		url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
-}
+  font-family: "Circular Std Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/CircularStd-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/CircularStd-Bold.woff2") format("woff2"), url("/fonts/CircularStd-Bold.woff") format("woff"), url("/fonts/CircularStd-Bold.ttf") format("truetype"), url("/fonts/CircularStd-Bold.svg#Circular Std Bold") format("svg"); }
+@font-face {
+  font-family: "Circular Std Book";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/CircularStd-Book.eot?#iefix") format("embedded-opentype"), url("/fonts/CircularStd-Book.woff2") format("woff2"), url("/fonts/CircularStd-Book.woff") format("woff"), url("/fonts/CircularStd-Book.ttf") format("truetype"), url("/fonts/CircularStd-Book.svg#Circular Std Book") format("svg"); }
+@font-face {
+  font-family: "Avant Garde Gothic";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Avant Garde Gothic.eot?#iefix") format("embedded-opentype"), url("/fonts/Avant Garde Gothic.woff2") format("woff2"), url("/fonts/Avant Garde Gothic.woff") format("woff"), url("/fonts/Avant Garde Gothic.ttf") format("truetype"), url("/fonts/Avant Garde Gothic.svg#Avant Garde Gothic") format("svg"); }
+.subheader {
+  font-size: 3.3em;
+  font-weight: 600;
+  padding-bottom: 40px; }
 
-/* Common style */
-figure {
-	position: relative;
-	overflow: hidden;
-	min-width: 320px;
-	max-width: 480px;
-	max-height: 300px;
-	background: #3085a3;
-	text-align: center;
-	cursor: pointer;
-}
+.outer-container .intro {
+  padding: 200px 0 150px 0; }
+  .outer-container .intro h1 {
+    font-size: 8em;
+    font-weight: 800;
+    padding-bottom: 70px; }
+  .outer-container .intro h5 {
+    font-size: 3em;
+    font-weight: 600;
+    line-height: 1.5; }
+.outer-container .bio {
+  padding: 0 0 200px 0; }
+  .outer-container .bio p {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.4; }
 
-figure img {
-	position: relative;
-	display: block;
-	min-height: 100%;
-	max-width: 100%;
-	opacity: 0.75;
-}
-
-figure figcaption {
-	padding: 2em;
-	color: #fff;
-	text-transform: uppercase;
-	font-size: 18px !important;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-figure figcaption::before,
-figure figcaption::after {
-	pointer-events: none;
-}
-
-figure figcaption,
-figure figcaption > a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-/* For some effects it will show as a button */
-figure figcaption > a {
-	z-index: 30;
-	text-indent: 200%;
-	white-space: nowrap;
-	font-size: 0;
-	opacity: 0;
-}
-
-figure h2 {
-    letter-spacing: 4px;
-	word-spacing: -0.35em;
-	font-weight: 300;
-}
-
-figure h2 span {
-    letter-spacing: normal !important;
-	font-weight: 800;
-}
-
-figure h2,
-figure p {
-	margin: 0;
-}
-
-figure p {
-	letter-spacing: 1px;
-	font-size: 80%;
-}
-
-figure.effect-milo {
-	background: #6f6f6f;
-}
-
-figure.effect-milo img {
-	max-width: none;
-	width: -webkit-calc(100% + 60px);
-	width: calc(100% + 60px);
-	opacity: 1;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-30px,0,0) scale(1.12);
-	transform: translate3d(-30px,0,0) scale(1.12);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-figure.effect-milo:hover img {
-	opacity: 0.5;
-	-webkit-transform: translate3d(0,0,0) scale(1);
-	transform: translate3d(0,0,0) scale(1);
-}
-
-figure.effect-milo h2 {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	padding: 0.8em 1em;
-}
-
-figure.effect-milo p {
-	padding: 0 10px 0 0;
-	width: 50%;
-	border-right: 1px solid #fff;
-	text-align: right;
-	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-20px,0,0);
-	transform: translate3d(-20px,0,0);
-}
-
-figure.effect-milo:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
+/*# sourceMappingURL=main.css.map */

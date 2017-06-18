@@ -1,5 +1,7 @@
 from flask import Flask, render_template
-from tracks import getLatestTracks
+import json
+
+# from tracks import getLatestTracks
 
 
 app = Flask(__name__)
@@ -19,11 +21,17 @@ def photography():
            '<h3 style="width: 100%; text-align: center">This page is a work in progress, so check back later.</h3>'
 
 
-@app.route('/get-tracks/')
+@app.route('/api/get-tracks/')
 def getTracks():
-    latestTracks = getLatestTracks()
+    # latestTracks = getLatestTracks()
 
-    return latestTracks
+    latestTracks = json.dumps({'track1': '5wTVNpi5WDByxBgKgUE6MU',
+                               'track2': '0Kz9aGVgFvndWkcaiylIt5',
+                               'track3': '3oUSdLtRYOSvXcLMrHctv7'
+                               })
+
+    return app.response_class(latestTracks, content_type='application/json')
+
 
 if __name__ == "__main__":
     app.debug = True

@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <title>Alex Melagrano</title>
 
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+    <!-- jQuery 3.2.1 CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+
+<!-- Script for portfolio.html -->
+<script src="{{ url_for('static', filename='portfolio.js') }}"></script>
 </head>
 <body>
 
@@ -43,9 +53,9 @@
 
             </div>
             <div class="spotify-link">
-                <iframe src="https://open.spotify.com/embed?uri=spotify:track:5wTVNpi5WDByxBgKgUE6MU" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
-                <iframe src="https://open.spotify.com/embed?uri=spotify:track:0Kz9aGVgFvndWkcaiylIt5" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
-                <iframe src="https://open.spotify.com/embed?uri=spotify:track:3oUSdLtRYOSvXcLMrHctv7" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
+                <iframe id="track-1" src="https://open.spotify.com/embed?uri=spotify:track:" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
+                <iframe id="track-2" src="https://open.spotify.com/embed?uri=spotify:track:" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
+                <iframe id="track-3" src="https://open.spotify.com/embed?uri=spotify:track:" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
             </div>
         </div>
 
@@ -68,14 +78,6 @@
 
 </body>
 
-<!-- jQuery 3.2.1 CDN -->
-<script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous">
-</script>
 
-<!-- Script for portfolio.html -->
-<script href="/js/portfolio.js"></script>
 
 </html>

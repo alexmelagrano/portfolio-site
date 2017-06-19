@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <title>Alex Melagrano</title>
 
-    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+    <!-- jQuery 3.2.1 CDN -->
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+
+<!-- Script for portfolio.html -->
+<script src="{{ url_for('static', filename='portfolio.js') }}"></script>
 </head>
 <body>
 
@@ -32,20 +42,10 @@
         <div class="twitter-spotify">
             <h4 class="subheader">what i've been up to</h4>
             <div class="twitter-link">
-                <div class="container">
-                <blockquote class=\"twitter-tweet\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003E\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51\uD83E\uDD51 \u003Ca href=\"https:\/\/twitter.com\/CA_Avocados\"\u003E@CA_avocados\u003C\/a\u003E, THIS IS NOT A DRILL. THE AVOCADO EMOJI IS HERE! \u003Ca href=\"https:\/\/twitter.com\/hashtag\/eatyouremojis?src=hash\"\u003E#eatyouremojis\u003C\/a\u003E\u003C\/p\u003E&mdash; Alex Melagrano (@alex_the_melon) \u003Ca href=\"https:\/\/twitter.com\/alex_the_melon\/status\/808443105229864961\"\u003EDecember 12, 2016\u003C\/a\u003E\</blockquote><script async src=\"\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"></script>
-                <meta name="twitter:card" content="summary" />
-                <meta name="twitter:site" content="@alex_the_melon" />
-                <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
-                <meta name="twitter:description" content="View the album on Flickr." />
-                <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
-            </div>
 
             </div>
             <div class="spotify-link">
-                <iframe src="https://open.spotify.com/embed?uri=spotify:track:5wTVNpi5WDByxBgKgUE6MU" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
-                <iframe src="https://open.spotify.com/embed?uri=spotify:track:0Kz9aGVgFvndWkcaiylIt5" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
-                <iframe src="https://open.spotify.com/embed?uri=spotify:track:3oUSdLtRYOSvXcLMrHctv7" width="400" height="80" frameborder="0" allowtransparency="true"></iframe>
+
             </div>
         </div>
 
@@ -67,15 +67,5 @@
     </footer>
 
 </body>
-
-<!-- jQuery 3.2.1 CDN -->
-<script
-  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous">
-</script>
-
-<!-- Script for portfolio.html -->
-<script href="/js/portfolio.js"></script>
 
 </html>

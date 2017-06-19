@@ -18,11 +18,12 @@ def photography():
            '<h3 style="width: 100%; text-align: center">This page is a work in progress, so check back later.</h3>'
 
 
-@app.route('/get-tweet/')
+@app.route('/api/get-tweet/')
 def getTweet():
     postInfo = getLatestTweet()
 
     return postInfo
+
 
 if __name__ == "__main__":
     app.debug = True

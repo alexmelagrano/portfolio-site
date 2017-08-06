@@ -1,9 +1,8 @@
 # Test Cases for the back end of the site
 
-import flaskr
 import unittest
 
-from flask import app
+# from flask import app
 
 
 class FlaskAppTests(unittest.TestCase):
@@ -11,7 +10,7 @@ class FlaskAppTests(unittest.TestCase):
     @unittest
     def fake_test(self):
         return True
-        
+
     # @classmethod
     # def setUpClass(cls):
     #     pass

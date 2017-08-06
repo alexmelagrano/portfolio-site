@@ -7,9 +7,8 @@ import unittest
 
 class FlaskAppTests(unittest.TestCase):
 
-    @unittest
     def fake_test(self):
-        return True
+        self.assertEquals('food'.upper(), 'FOOD')
 
     # @classmethod
     # def setUpClass(cls):

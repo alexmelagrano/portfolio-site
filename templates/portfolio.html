@@ -51,11 +51,21 @@
 
         <div class="projects">
             <h4 class="subheader">some past projects</h4>
-
-            <!-- use Flask to iterate through a list here? or just hardcode it in -->
-
+            <div class="projects-container">
+                {% for project in projects %}
+                    <div class="project">
+                        <h6>{{ project.title }}</h6>
+                        <p>{{ project.body }}</p>
+                        <a href="{{ project.link.url }}" target="_blank">{{ project.link.text }}</a>
+                        <div class="tags">
+                            {% for tag in project.tags %}
+                                <span>{{ tag.name }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
         </div>
-
         <div class="contact">
 
             <!-- some contact shizzy shiz -->

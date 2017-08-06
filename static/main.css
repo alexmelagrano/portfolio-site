@@ -1,7 +1,13 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 body {
-  background-color: #F9FFF3;
+  background-color: #fdfff6;
   color: #1C344C;
-  font-family: "Avant Garde Gothic", Helvetica, Arial, sans-serif;
+  font-family: "Circular Std Bold", Helvetica, Arial, sans-serif;
   font-size: 1.2em;
   line-height: 1.3;
   margin: 0; }
@@ -12,14 +18,14 @@ footer, header, menu, nav, section {
 p {
   margin-top: 0;
   margin-bottom: 30px;
-  letter-spacing: 2px; }
+  letter-spacing: 1px; }
 
 .outer-container {
   max-width: 700px;
   margin: 0 auto;
   padding: 150px 0; }
 
-.uppercase {
+.uppercase, .outer-container .projects .projects-container .project .tags span {
   text-transform: uppercase; }
 
 .bold {
@@ -32,6 +38,7 @@ p {
 .med-wide {
   letter-spacing: 0.2rem; }
 
+/* Phone defaults */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 2rem;
@@ -68,30 +75,24 @@ h6 {
   letter-spacing: 0; }
 
 /* Larger than phablet */
-h1 {
-  font-size: 5rem; }
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 5rem; }
 
-h2 {
-  font-size: 4.2rem; }
+  h2 {
+    font-size: 4.2rem; }
 
-h3 {
-  font-size: 3.6rem; }
+  h3 {
+    font-size: 3.6rem; }
 
-h4 {
-  font-size: 3rem; }
+  h4 {
+    font-size: 3rem; }
 
-h5 {
-  font-size: 2.4rem; }
+  h5 {
+    font-size: 2.4rem; }
 
-h6 {
-  font-size: 1.6rem; }
-
-html {
-  box-sizing: border-box; }
-
-*, *::after, *::before {
-  box-sizing: inherit; }
-
+  h6 {
+    font-size: 1.6rem; } }
 @font-face {
   font-family: "Circular Std Bold";
   font-style: normal;
@@ -114,19 +115,101 @@ html {
 
 .outer-container .intro {
   padding: 200px 0 150px 0; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .outer-container .intro {
+      padding-top: 175px; } }
+  @media (min-width: 1024px) {
+    .outer-container .intro {
+      padding-top: 150px; } }
   .outer-container .intro h1 {
     font-size: 8em;
     font-weight: 800;
     padding-bottom: 70px; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .outer-container .intro h1 {
+        font-size: 6.5em; } }
+    @media (min-width: 1024px) {
+      .outer-container .intro h1 {
+        font-size: 5em; } }
   .outer-container .intro h5 {
     font-size: 3em;
     font-weight: 600;
     line-height: 1.5; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .outer-container .intro h5 {
+        font-size: 2.5em; } }
+    @media (min-width: 1024px) {
+      .outer-container .intro h5 {
+        font-size: 2em; } }
 .outer-container .bio {
   padding: 0 0 200px 0; }
   .outer-container .bio p {
     font-size: 1.5em;
     font-weight: 400;
     line-height: 1.4; }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .outer-container .bio p {
+        font-size: 1.25em; } }
+    @media (min-width: 1024px) {
+      .outer-container .bio p {
+        font-size: 1em; } }
+.outer-container .projects .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start; }
+  .outer-container .projects .projects-container .project {
+    padding-bottom: 75px; }
+    .outer-container .projects .projects-container .project h6 {
+      margin-bottom: 1.3em;
+      font-size: 2.2em; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .outer-container .projects .projects-container .project h6 {
+          font-size: 1.7em; } }
+      @media (min-width: 1024px) {
+        .outer-container .projects .projects-container .project h6 {
+          font-size: 1.6em; } }
+    .outer-container .projects .projects-container .project p {
+      font-size: 1em; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .outer-container .projects .projects-container .project p {
+          font-size: 0.9em; } }
+      @media (min-width: 1024px) {
+        .outer-container .projects .projects-container .project p {
+          font-size: 0.7em; } }
+    .outer-container .projects .projects-container .project a {
+      font-size: 1.4em;
+      text-decoration-line: underline;
+      text-decoration-color: #1C344C;
+      display: inline-flex; }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .outer-container .projects .projects-container .project a {
+          font-size: 0.9em; } }
+      @media (min-width: 1024px) {
+        .outer-container .projects .projects-container .project a {
+          font-size: 0.7em; } }
+    .outer-container .projects .projects-container .project .tags {
+      display: inline-flex;
+      float: right; }
+      .outer-container .projects .projects-container .project .tags span {
+        font-size: 0.9em;
+        color: #1C344C;
+        padding: 5px 8px;
+        margin: 5px;
+        background-color: #ACF0F2;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px; }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          .outer-container .projects .projects-container .project .tags span {
+            font-size: 0.7em; } }
+        @media (min-width: 1024px) {
+          .outer-container .projects .projects-container .project .tags span {
+            font-size: 0.5em; } }
 
 /*# sourceMappingURL=main.css.map */

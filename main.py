@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from projects import getProjects
+from services.projects import getProjects
 
 app = Flask(__name__)
 

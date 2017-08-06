@@ -2,6 +2,8 @@
 
 import unittest
 
+from flask import app
+
 
 class FlaskAppTests(unittest.TestCase):
 
@@ -20,14 +22,12 @@ class FlaskAppTests(unittest.TestCase):
     def tearDown(self):
         pass
 
-
     # Tests the "get-tweet" API call; will contain an blockquote element
     def testGetTweet(self):
         result = self.app.get('/api/get-tweet/')
         decoded = result.decode('utf-8')
 
         self.assertTrue(decoded.find('blockquote'))
-
 
 
 def main():

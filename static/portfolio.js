@@ -14,7 +14,9 @@ var main = function(){
             $('.twitter-link').append(data)
         } else {
             console.log("Couldn't retrieve Twitter info. \nResponse: " + response);
-            $('.twitter-link').append('<div class="twitter-error">Couldn\'t retrieve twitter data, but don\'t worry - I\'m doing stuff.</div>')
+
+            // Yes, this looks gross. But it's faster than building a jQuery element, so suck it.
+            $('.twitter-link').append('<div class="twitter-error">Couldn\'t retrieve twitter data, but don\'t worry -<br/>I\'m probably doing something cool.<br/><br/>Like croquet. Or going HAM at an estate sale.</div>')
         }
     })
 

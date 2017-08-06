@@ -9,12 +9,12 @@ var main = function(){
     // Twitter
     $.get('http://127.0.0.1:5000/api/get-tweet', function(data, response){
         if (response == 200 || response == 'success'){
-            console.log("Twitter response: " + response + "\nHere's the data:");
-            console.log(data);
+            console.log("Twitter response: " + response);
 
-            $('.twitter-link').append(data);
+            $('.twitter-link').append(data)
         } else {
             console.log("Couldn't retrieve Twitter info. \nResponse: " + response);
+            $('.twitter-link').append('<div class="twitter-error">Couldn\'t retrieve twitter data, but don\'t worry - I\'m doing stuff.</div>')
         }
     })
 

@@ -71,5 +71,5 @@ projects = [
 
 
 # Simply returns the 'projects' array
-def getProjects():
+def get_projects():
     return projects

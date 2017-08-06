@@ -1,15 +1,23 @@
 from flask import Flask, render_template
-from services.projects import getProjects
-from tweets import getLatestTweet
+from services.projects import get_projects
+from services.tweets import get_latest_tweet
+
 
 app = Flask(__name__)
+
+
+def createApp():
+    app = Flask(__name__)
+
+    return app
 
 
 # Routing
 @app.route('/')
 @app.route('/index/')
 def index():
-    projects = getProjects()
+    projects = get_projects()
+
     return render_template("portfolio.html",
                            projects=projects)
 
@@ -22,10 +30,10 @@ def photography():
 
 
 @app.route('/api/get-tweet/')
-def getTweet():
-    postInfo = getLatestTweet()
+def get_tweet():
+    post_info = get_latest_tweet()
 
-    return postInfo
+    return post_info
 
 
 if __name__ == "__main__":

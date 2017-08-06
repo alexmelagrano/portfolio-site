@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from services.projects import getProjects
 from tweets import getLatestTweet
 
 app = Flask(__name__)
@@ -8,7 +9,9 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index/')
 def index():
-    return render_template("portfolio.html")
+    projects = getProjects()
+    return render_template("portfolio.html",
+                           projects=projects)
 
 
 @app.route('/photography/')
